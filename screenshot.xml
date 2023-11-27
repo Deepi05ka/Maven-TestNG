@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="takeScreenshot.ItestListner"></listener>
+	</listeners>
+  <test  name="Test1">
+    <classes>
+      <class name="takeScreenshot.testClass">
+      <methods>
+		  <include name="google" />
+	  </methods>
+	  </class>
+    </classes>
+    </test>
+    <test  name="Test2">
+    <classes>
+      <class name="takeScreenshot.testClass">
+      <methods>
+		  <include name="flipkart" />
+	  </methods>
+	  </class>
+    </classes>
+    </test>
+    <test  name="Test3">
+    <classes>
+      <class name="takeScreenshot.testClass">
+      <methods>
+		  <include name="OrangeHrm" />
+	  </methods>
+	  </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
